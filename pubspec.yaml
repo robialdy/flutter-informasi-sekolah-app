@@ -62,6 +62,72 @@ flutter:
   assets:
     - assets/splash_screen/logo.png
     - assets/splash_screen/untatlogo.png
+    - assets/images/logo_gedung_sate.png
+    - assets/images/gedung_sate.jpeg
+    - assets/images/banner_ppdb.jpeg
+    - assets/images/infoppdb1.jpg
+    - assets/images/infoppdb2.jpg
+    - assets/images/infoppdb3.jpeg
+
+    # assets foto-foto sekolah
+    # sman 1
+    - assets/school/sman_1/profile.png
+    - assets/school/sman_1/picture_1.jpg
+    - assets/school/sman_1/picture_2.jpg
+    - assets/school/sman_1/picture_3.jpg
+    # sman 2
+    - assets/school/sman_2/profile.png
+    - assets/school/sman_2/picture_1.jpg
+    - assets/school/sman_2/picture_2.jpg
+    - assets/school/sman_2/picture_3.jpeg
+    # sman 3
+    - assets/school/sman_3/profile.jpg
+    - assets/school/sman_3/picture_1.jpg
+    - assets/school/sman_3/picture_2.jpg
+    - assets/school/sman_3/picture_3.jpg
+    # sman 4
+    - assets/school/sman_4/profile.jpg
+    - assets/school/sman_4/picture_1.jpg
+    - assets/school/sman_4/picture_2.jpg
+    - assets/school/sman_4/picture_3.jpg
+
+    # sman 4
+    - assets/school/sman_5/profile.png
+    - assets/school/sman_5/picture_1.jpg
+    - assets/school/sman_5/picture_2.jpg
+    - assets/school/sman_5/picture_3.jpg
+
+    # smkn 1
+    - assets/school/smkn_1/profile.jpg
+    - assets/school/smkn_1/picture_1.jpg
+    - assets/school/smkn_1/picture_2.jpg
+
+    # smkn 2
+    - assets/school/smkn_2/profile.jpeg
+    - assets/school/smkn_2/picture_1.jpg
+    - assets/school/smkn_2/picture_2.jpg
+
+    # smkn 4
+    - assets/school/smkn_4/profile.jpg
+    - assets/school/smkn_4/picture_1.jpg
+    - assets/school/smkn_4/picture_2.jpg
+    - assets/school/smkn_4/picture_3.jpg
+
+    # smkn 13
+    - assets/school/smkn_13/profile.jpg
+    - assets/school/smkn_13/picture_1.jpg
+    - assets/school/smkn_13/picture_2.jpeg
+    - assets/school/smkn_13/picture_3.jpg
+
+    # smks igasar
+    - assets/school/smks_igasar/logo.png
+    - assets/school/smks_igasar/profile.jpg
+    - assets/school/smks_igasar/picture_1.jpg
+    - assets/school/smks_igasar/picture_2.jpeg
+    - assets/school/smks_igasar/picture_3.jpg
+    
+
+    
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -75,6 +141,22 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
+
   # fonts:
   #   - family: Schyler
   #     fonts:
