@@ -28,7 +28,7 @@ class DetailPage extends StatelessWidget {
             ),
           ),
           SingleChildScrollView(
-            physics: AlwaysScrollableScrollPhysics(),
+            physics: ClampingScrollPhysics(),
             child: Column(
               children: [
                 Stack(
@@ -168,148 +168,153 @@ class DetailPage extends StatelessWidget {
                     },
                   ),
                 ),
-                //DESKRIPSI
-                const Padding(
-                  padding:
-                      const EdgeInsets.only(left: 30.0, top: 10.0, bottom: 5.0),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "Deskripsi",
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
-                        color: const Color(0xFFF8C015),
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(12.0),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10.0),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
-                        spreadRadius: 2,
-                        blurRadius: 5,
-                        offset: const Offset(0, 4),
-                      )
-                    ],
-                  ),
-                  width: 375,
-                  child: Text(
-                    detailSchool.description,
-                    style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14.5,
-                        color: const Color(0xFF484848)),
-                  ),
-                ),
-                // VISI
-                const Padding(
-                  padding:
-                      const EdgeInsets.only(left: 30.0, top: 10.0, bottom: 5.0),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "Visi",
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
-                        color: const Color(0xFFF8C015),
-                      ),
-                    ),
-                  ),
-                ),
-                Container(
-                  padding: EdgeInsets.all(12.0),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(10.0),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.black.withOpacity(0.2),
-                        spreadRadius: 2,
-                        blurRadius: 5,
-                        offset: const Offset(0, 4),
-                      )
-                    ],
-                  ),
-                  width: 375,
-                  child: Text(
-                    '"${detailSchool.visi}"',
-                    style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.w500,
-                        fontStyle: FontStyle.italic,
-                        fontSize: 14.5,
-                        color: const Color(0xFF484848)),
-                  ),
-                ),
-                // MISI
-                const Padding(
-                  padding:
-                      const EdgeInsets.only(left: 30.0, top: 10.0, bottom: 5.0),
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Text(
-                      "Misi",
-                      style: TextStyle(
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
-                        color: const Color(0xFFF8C015),
-                      ),
-                    ),
-                  ),
-                ),
                 Padding(
-                  padding: const EdgeInsets.only(bottom: 60.0),
-                  child: Container(
-                    padding: EdgeInsets.all(12.0),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(10.0),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withOpacity(0.2),
-                          spreadRadius: 2,
-                          blurRadius: 5,
-                          offset: const Offset(0, 4),
-                        )
-                      ],
-                    ),
-                    width: 375,
-                    child: Column(
-                      children: List.generate(
-                        detailSchool.misi.length,
-                        (index) => RichText(
-                          text: TextSpan(children: [
-                            TextSpan(
-                              text: '${index + 1}.',
-                              style: const TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14.5,
-                                  color: const Color(0xFF484848)),
+                  padding: EdgeInsets.only(
+                      top: 10.0, left: 10.0, right: 10.0, bottom: 55.0),
+                  child: Column(
+                    children: [
+                      //DESKRIPSI
+                      const Padding(
+                        padding: const EdgeInsets.only(left: 15.0, bottom: 4.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Deskripsi",
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                              color: const Color(0xFFF8C015),
                             ),
-                            TextSpan(
-                              text: ' ${detailSchool.misi[index]}',
-                              style: const TextStyle(
-                                  fontFamily: 'Poppins',
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 14.5,
-                                  color: const Color(0xFF484848)),
-                            )
-                          ]),
+                          ),
                         ),
                       ),
-                    ),
+                      Container(
+                        padding: EdgeInsets.all(12.0),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
+                            )
+                          ],
+                        ),
+                        width: MediaQuery.of(context).size.width,
+                        child: Text(
+                          detailSchool.description,
+                          style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14.5,
+                              color: const Color(0xFF484848)),
+                        ),
+                      ),
+                      // VISI
+                      const Padding(
+                        padding: const EdgeInsets.only(
+                            left: 15.0, bottom: 4.0, top: 8.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Visi",
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                              color: const Color(0xFFF8C015),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(12.0),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
+                            )
+                          ],
+                        ),
+                        width: MediaQuery.of(context).size.width,
+                        child: Text(
+                          '"${detailSchool.visi}"',
+                          style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.w500,
+                              fontStyle: FontStyle.italic,
+                              fontSize: 14.5,
+                              color: const Color(0xFF484848)),
+                        ),
+                      ),
+                      // MISI
+                      const Padding(
+                        padding: const EdgeInsets.only(
+                            left: 15.0, bottom: 4.0, top: 8.0),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Text(
+                            "Misi",
+                            style: TextStyle(
+                              fontFamily: 'Poppins',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20.0,
+                              color: const Color(0xFFF8C015),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(12.0),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(10.0),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.2),
+                              spreadRadius: 2,
+                              blurRadius: 5,
+                              offset: const Offset(0, 4),
+                            )
+                          ],
+                        ),
+                        width: MediaQuery.of(context).size.width,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: List.generate(
+                            detailSchool.misi.length,
+                            (index) => RichText(
+                              text: TextSpan(children: [
+                                TextSpan(
+                                  text: '${index + 1}.',
+                                  style: const TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14.5,
+                                      color: const Color(0xFF484848)),
+                                ),
+                                TextSpan(
+                                  text: ' ${detailSchool.misi[index]}',
+                                  style: const TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 14.5,
+                                      color: const Color(0xFF484848)),
+                                )
+                              ]),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -327,7 +332,7 @@ class DetailPage extends StatelessWidget {
                       topLeft: Radius.circular(15.0),
                       topRight: Radius.circular(15.0))),
               padding: EdgeInsets.symmetric(vertical: 10.0),
-              child: const Row(
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Row(
@@ -335,7 +340,7 @@ class DetailPage extends StatelessWidget {
                       Icon(Icons.school, color: Colors.white),
                       SizedBox(width: 7),
                       Text(
-                        '@smansebandung',
+                        detailSchool.instagram,
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'Poppins',
@@ -349,7 +354,7 @@ class DetailPage extends StatelessWidget {
                       Icon(Icons.web_rounded, color: Colors.white),
                       SizedBox(width: 7),
                       Text(
-                        'sman1bdg.sch.id',
+                        detailSchool.website,
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: 'Poppins',

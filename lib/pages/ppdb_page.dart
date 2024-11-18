@@ -27,6 +27,7 @@ class PpdbPage extends StatelessWidget {
             ),
           ),
           SingleChildScrollView(
+            physics: ClampingScrollPhysics(),
             child: Column(
               children: [
                 // button back

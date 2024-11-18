@@ -2,7 +2,7 @@ name: informasi_sekolah_app
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -31,7 +31,6 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
@@ -52,7 +51,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -60,8 +58,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/splash_screen/logo.png
-    - assets/splash_screen/untatlogo.png
+    # - assets/splash_screen/logo.png
     - assets/images/logo_gedung_sate.png
     - assets/images/gedung_sate.jpeg
     - assets/images/banner_ppdb.jpeg
@@ -71,49 +68,79 @@ flutter:
 
     # assets foto-foto sekolah
     # sman 1
+    - assets/school/sman_1/logo.png
     - assets/school/sman_1/profile.png
     - assets/school/sman_1/picture_1.jpg
     - assets/school/sman_1/picture_2.jpg
     - assets/school/sman_1/picture_3.jpg
     # sman 2
+    - assets/school/sman_2/logo.png
     - assets/school/sman_2/profile.png
     - assets/school/sman_2/picture_1.jpg
     - assets/school/sman_2/picture_2.jpg
     - assets/school/sman_2/picture_3.jpeg
     # sman 3
+    - assets/school/sman_3/logo.png
     - assets/school/sman_3/profile.jpg
     - assets/school/sman_3/picture_1.jpg
     - assets/school/sman_3/picture_2.jpg
     - assets/school/sman_3/picture_3.jpg
     # sman 4
+    - assets/school/sman_4/logo.png
     - assets/school/sman_4/profile.jpg
     - assets/school/sman_4/picture_1.jpg
     - assets/school/sman_4/picture_2.jpg
     - assets/school/sman_4/picture_3.jpg
 
-    # sman 4
+    # sman 5
+    - assets/school/sman_5/logo.png
     - assets/school/sman_5/profile.png
     - assets/school/sman_5/picture_1.jpg
     - assets/school/sman_5/picture_2.jpg
     - assets/school/sman_5/picture_3.jpg
 
+    # sman 7
+    - assets/school/sman_7/logo.png
+    - assets/school/sman_7/profile.jpeg
+    - assets/school/sman_7/picture_1.jpg
+    - assets/school/sman_7/picture_2.jpeg
+    - assets/school/sman_7/picture_3.jpeg
+
+    # sman 8
+    - assets/school/sman_8/logo.png
+    - assets/school/sman_8/profile.jpg
+    - assets/school/sman_8/picture_1.png
+    - assets/school/sman_8/picture_2.jpg
+    - assets/school/sman_8/picture_3.jpg
+
+    # sman 10
+    - assets/school/sman_10/logo.png
+    - assets/school/sman_10/profile.jpg
+    - assets/school/sman_10/picture_1.jpeg
+    - assets/school/sman_10/picture_2.jpg
+    - assets/school/sman_10/picture_3.jpg
+
     # smkn 1
+    - assets/school/smkn_1/logo.png
     - assets/school/smkn_1/profile.jpg
     - assets/school/smkn_1/picture_1.jpg
     - assets/school/smkn_1/picture_2.jpg
 
     # smkn 2
+    - assets/school/smkn_2/logo.png
     - assets/school/smkn_2/profile.jpeg
     - assets/school/smkn_2/picture_1.jpg
     - assets/school/smkn_2/picture_2.jpg
 
     # smkn 4
+    - assets/school/smkn_4/logo.png
     - assets/school/smkn_4/profile.jpg
     - assets/school/smkn_4/picture_1.jpg
     - assets/school/smkn_4/picture_2.jpg
     - assets/school/smkn_4/picture_3.jpg
 
     # smkn 13
+    - assets/school/smkn_13/logo.png
     - assets/school/smkn_13/profile.jpg
     - assets/school/smkn_13/picture_1.jpg
     - assets/school/smkn_13/picture_2.jpeg
@@ -125,9 +152,31 @@ flutter:
     - assets/school/smks_igasar/picture_1.jpg
     - assets/school/smks_igasar/picture_2.jpeg
     - assets/school/smks_igasar/picture_3.jpg
-    
 
-    
+    # smks medikacom
+    - assets/school/smks_medikacom/logo.png
+    - assets/school/smks_medikacom/profile.png
+    - assets/school/smks_medikacom/picture_1.jpg
+    - assets/school/smks_medikacom/picture_2.jpg
+    - assets/school/smks_medikacom/picture_3.jpg
+
+    # smkn 9
+    - assets/school/smkn_9/logo.png
+    - assets/school/smkn_9/profile.jpeg
+    - assets/school/smkn_9/picture_1.jpeg
+    - assets/school/smkn_9/picture_2.jpg
+    - assets/school/smkn_9/picture_3.jpg
+
+    # smkn 14
+    - assets/school/smkn_14/logo.png
+    - assets/school/smkn_14/profile.jpg
+    - assets/school/smkn_14/picture_1.jpg
+    - assets/school/smkn_14/picture_2.jpg
+    - assets/school/smkn_14/picture_3.jpg
+
+
+
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

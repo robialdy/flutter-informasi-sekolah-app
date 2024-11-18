@@ -34,6 +34,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
           SingleChildScrollView(
+            physics: ClampingScrollPhysics(),
             child: Stack(
               children: [
                 // gambar gedung sate
@@ -61,6 +62,7 @@ class HomePage extends StatelessWidget {
                       "assets/images/gedung_sate.jpeg",
                       fit: BoxFit.cover,
                       height: 250,
+                      width: MediaQuery.of(context).size.width,
                     ),
                   ),
                 ),
@@ -285,7 +287,7 @@ class HomePage extends StatelessWidget {
                                 child: Column(
                                   children: [
                                     Container(
-                                      width: 163, 
+                                      width: 163,
                                       height: 93,
                                       child: Ink.image(
                                         image: AssetImage(
@@ -371,7 +373,7 @@ class HomePage extends StatelessWidget {
                                   children: [
                                     Container(
                                       width: 163,
-                                      height: 93, 
+                                      height: 93,
                                       child: Ink.image(
                                         image: AssetImage(
                                             favoriteSchoolSmk.profileImage),
